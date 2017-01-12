@@ -4,7 +4,7 @@ E='echo -n .'
 echo "-------------------------------------------------------------------------------"
 echo "                     Installation des plugins Wordpress                        "
 echo "-------------------------------------------------------------------------------"
-echo " [..]"
+echo " [...]"
 
 mkdir /tmp/install_wordpress_plugins
 cd /tmp/install_wordpress_plugins
@@ -103,13 +103,13 @@ $E
 $WGET https://downloads.wordpress.org/plugin/google-captcha.zip
 $E
 # Exploit Scanner
-GET https://downloads.wordpress.org/plugin/exploit-scanner.zip
+#GET https://downloads.wordpress.org/plugin/exploit-scanner.zip
 $E
 # WP fail2ban
 $WGET https://downloads.wordpress.org/plugin/wp-fail2ban.zip
 $E
 
-unzip *.zip
+unzip '*.zip'
 rm *.zip
 mv * /var/www/html/wp-content/plugins/
 cd
