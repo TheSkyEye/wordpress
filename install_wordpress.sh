@@ -1,5 +1,5 @@
 apt-get update && apt-get upgrade -y
-apt-get install -y nginx unzip curl wget build-essential ntp ntpdate
+apt-get install -y nginx unzip curl wget build-essential ntp ntpdate htop
 
 echo "nombre de processueur : " $(cat /proc/cpuinfo | grep processor | wc -l)
 sed 's/worker_processes/worker_processes $(cat /proc/cpuinfo | grep processor | wc -l)/' /etc/nginx/nginx.conf
