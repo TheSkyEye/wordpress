@@ -1,5 +1,5 @@
 WGET='wget -q --no-check-certificate'
-E='&& echo -n . && echo ""'
+E='&& echo -n .'
  $E
 echo "-------------------------------------------------------------------------------"
 echo "                   Installation des plugins Wordpress                          "
@@ -82,6 +82,7 @@ mv * /var/www/html/wp-content/plugins/
 cd
 rm -rf /tmp/install_wordpress_plugins
 
+echo ""
 echo "-------------------------------------------------------------------------------"
 echo "               Installation des plugins Wordpress est terminer                 "
 echo "-------------------------------------------------------------------------------"
