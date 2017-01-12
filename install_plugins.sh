@@ -1,8 +1,8 @@
 WGET='wget -q --no-check-certificate'
 E='echo -n .'
- $E
+
 echo "-------------------------------------------------------------------------------"
-echo "                   Installation des plugins Wordpress                          "
+echo "                     Installation des plugins Wordpress                        "
 echo "-------------------------------------------------------------------------------"
 echo " [..]"
 
