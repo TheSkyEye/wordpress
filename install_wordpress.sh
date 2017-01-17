@@ -2,7 +2,7 @@ apt-get update && apt-get upgrade -y
 apt-get install -y nginx unzip curl wget build-essential ntp ntpdate htop
 
 echo "nombre de processueur : " $(cat /proc/cpuinfo | grep processor | wc -l)
-sed 's/worker_processes/worker_processes $(cat /proc/cpuinfo | grep processor | wc -l)/' /etc/nginx/nginx.conf
+sed 's/worker_processes ?/worker_processes $(cat /proc/cpuinfo | grep processor | wc -l)/' /etc/nginx/nginx.conf
 #sed -i /worker_processes  4;/ /worker_processes  4; $(cat /proc/cpuinfo | grep processor | wc -l) /etc/nginx/nginx.conf
 systemctl start nginx
 apt-get install -y mariadb-client mariadb-server
